@@ -1,0 +1,53 @@
+.left-navbar {
+  width: 56px;
+  background: #1D414D;
+  min-height: 100vh;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+}
+.nav-logo img {
+  border-radius: 12px;
+  background: #fff;
+  padding: 4px;
+}
+.nav-icons {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.nav-icon {
+  color: #b0bed9;
+  font-size: 0.8rem;
+  width: 100%;
+  text-align: center;
+  transition: color 0.2s, background 0.2s;
+  border-radius: 12px;
+  cursor: default;
+  color: white;
+}
+.nav-icon.active, .nav-icon:hover {
+  color: #183153;
+  background: #ffe3a3;
+}
+.nav-bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 12px;
+}
+.nav-bottom i {
+  color: #b0bed9;
+  font-size: 1rem;
+  margin: 0 6px;
+}

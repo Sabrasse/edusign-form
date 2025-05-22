@@ -1,2 +1,33 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="edusign-main-layout d-flex">
+  <!-- Left Navigation Bar -->
+  <%= render "shared/vertical_navbar" %>
+
+  <!-- Main Content -->
+  <div class="edusign-prototype-container d-flex flex-column w-100" data-controller="form-builder">
+    <!-- Page Header -->
+    <%= render "shared/header" %>
+    <div class="content-sections d-flex w-100 position-relative">
+      <!-- Mobile Preview -->
+      <div class="mobile-preview-container position-absolute start-50 translate-middle-x">
+        <div class="mobile-preview-mockup">
+          <div class="mobile-notch"></div>
+          <div class="mobile-preview-inner">
+            <div class="mobile-body">
+              <form class="mobile-form mt-3">
+                <div data-form-builder-target="fields">
+                  <!-- Dynamic fields will be rendered here -->
+                </div>
+                <button type="button" class="mobile-submit-btn">Demander une brochure</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form Builder Controls -->
+      <div class="form-builder-wrapper position-fixed end-0 top-50 translate-middle-y">
+        <%= render "shared/form_builder" %>
+      </div>
+    </div>
+  </div>
+</div>
